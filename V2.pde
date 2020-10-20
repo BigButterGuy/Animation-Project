@@ -14,8 +14,11 @@ class Ship {
     rotation = _rotation;
     shipImage = _shipImage;
     active = _active;
+    shipImage.resize(70,30);
   }
- 
+ void draw(){
+   image(shipImage, xpos, ypos);
+ }
 }
 
 
@@ -32,39 +35,39 @@ void setup() {
     
   }
 }
-void draw(){
-  background(255);
-  metal.resize(500,500);
-  ship1.resize(70,30);//sets size of ships
-  ship2.resize(40,30);
-  image(metal,0,0);
-  image(ship1, 0,0); //spawns the ships to test sizing.
-  image(ship2, 30,30);
+//void draw(){
+//  background(255);
+//  metal.resize(500,500);
+//  ship1.resize(70,30);//sets size of ships
+//  ship2.resize(40,30);
+//  image(metal,0,0);
+//  image(ship1, 0,0); //spawns the ships to test sizing.
+//  image(ship2, 30,30);
   
- // if (mouseX >250){
-  //  Ramount = int(random(45,90));
-  //}
-  //else if (mouseX <250){
-  //  Ramount = int(random(0,45));
-  //}
-  //else if (mouseY <250){
-  //  TAmount =int(random(0));
-  //}
-}
-void mouseMoved(){
-  
-}  
-  
-//void draw() {
- // background(0);
- // image(metal,0,0);
- // if (metal.height < 50){
-  //  direction = 1;
- // }
- // else if(metal.height > 1199){
- //   direction = -1;
- // }
- // int width = metal.width + direction;
- // int height = metal.height + direction;
-  //metal.resize(width, height);
+// // if (mouseX >250){
+//  //  Ramount = int(random(45,90));
+//  //}
+//  //else if (mouseX <250){
+//  //  Ramount = int(random(0,45));
+//  //}
+//  //else if (mouseY <250){
+//  //  TAmount =int(random(0));
+//  //}
 //}
+//void mouseMoved(){
+  
+//}  
+  
+////void draw() {
+// // background(0);
+// // image(metal,0,0);
+// // if (metal.height < 50){
+//  //  direction = 1;
+// // }
+// // else if(metal.height > 1199){
+// //   direction = -1;
+// // }
+// // int width = metal.width + direction;
+// // int height = metal.height + direction;
+//  //metal.resize(width, height);
+////}
